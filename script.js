@@ -22,4 +22,4 @@ function createPixel() {
   }, 21000); 
 }
 
-setInterval(createPixel, 100); // Cria um novo pixel a cada 500ms
+setInterval(createPixel, 100); // Cria um novo pixel a cada 100ms

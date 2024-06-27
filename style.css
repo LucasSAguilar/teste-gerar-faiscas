@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 
 * {
   padding: 0;
@@ -7,25 +7,25 @@
 }
 
 body {
-    background-color: #131212;
-    overflow: hidden;
-    background-image: url("background.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    width: 100vw; 
-    height: 100vh; 
+  background-color: #131212;
+  overflow: hidden;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
-    color: #FFFFFF;
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    font-family: "MedievalSharp", cursive;
-    font-weight: 400;
-    font-style: normal;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .pixel {
@@ -47,6 +47,7 @@ h1 {
   }
   20% {
     transform: translateX(20vw) translateY(-15vh);
+    opacity: 0.5;
   }
   30% {
     transform: translateX(30vw) translateY(-30vh);
@@ -56,6 +57,7 @@ h1 {
   }
   50% {
     transform: translateX(45vw) translateY(-50vh);
+    opacity: 1;
   }
   60% {
     transform: translateX(55vw) translateY(-60vh);
@@ -65,12 +67,15 @@ h1 {
   }
   80% {
     transform: translateX(75vw) translateY(-79vh);
+    opacity: 0.8;
   }
   90% {
     transform: translateX(85vw) translateY(-91vh);
+    opacity: 0.5;
   }
   100% {
     transform: translateX(100vw) translateY(-100vh);
+    opacity: 0;
   }
 }
 
