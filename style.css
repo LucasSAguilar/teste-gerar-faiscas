@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #131212;
+  overflow: hidden;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pixel {
+  background-color: #864316;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.4;
+
+  animation: zigzagToTopRight 20s ease-in-out, sparkColors 2s infinite linear;
+}
+
+@keyframes zigzagToTopRight {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  10% {
+    transform: translateX(10vw) translateY(-10vh);
+  }
+  20% {
+    transform: translateX(20vw) translateY(-15vh);
+  }
+  30% {
+    transform: translateX(30vw) translateY(-30vh);
+  }
+  40% {
+    transform: translateX(40vw) translateY(-40vh);
+  }
+  50% {
+    transform: translateX(45vw) translateY(-50vh);
+  }
+  60% {
+    transform: translateX(55vw) translateY(-60vh);
+  }
+  70% {
+    transform: translateX(60vw) translateY(-68vh);
+  }
+  80% {
+    transform: translateX(75vw) translateY(-79vh);
+  }
+  90% {
+    transform: translateX(85vw) translateY(-91vh);
+  }
+  100% {
+    transform: translateX(100vw) translateY(-100vh);
+  }
+}
+
+@keyframes sparkColors {
+  0% {
+    background-color: #ffd700;
+  }
+  25% {
+    background-color: #ffa500;
+  }
+  50% {
+    background-color: #e7602e;
+  }
+  75% {
+    background-color: #f08779;
+  }
+  100% {
+    background-color: #ffd700;
+  }
+}
